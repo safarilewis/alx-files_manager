@@ -1,11 +1,9 @@
 import mongodb from 'mongodb';
 // eslint-disable-next-line
 import Collection from 'mongodb/lib/collection';
-import loadENV from './load_env';
 
 class DBClient {
   constructor() {
-    loadENV();
     const host = process.env.DB_HOST || 'localhost';
     const port = process.env.DB_PORT || 27017;
     const database = process.env.DB_DATABASE || 'files_manager';
