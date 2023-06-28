@@ -50,7 +50,6 @@ fileQueue.process(async (job) => {
 
 userQueue.process(async (job) => {
   const { userId } = job.data;
-
   if (!userId) {
     console.log('Missing userId');
     throw new Error('Missing userId');
