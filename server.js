@@ -1,6 +1,7 @@
-import { Express } from 'express';
+import { express } from 'express';
 import loadENV from './utils/load_env';
-import
+import injectRoutes from './routes';
+import injectMiddlewares from './middleware/mid';
 
 const startServer = (api) => {
   loadENV();
@@ -10,4 +11,10 @@ const startServer = (api) => {
     console.log(`[${env}] API has started listening at port:${port}`);
   });
 };
+const server = express();
 
+injectMiddlewares(server);
+injectRoutes(server);
+startServer(server);
+
+export default server;
