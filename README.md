@@ -1,7 +1,5 @@
 # Files Manager
 
-[![Coverage Status](https://coveralls.io/repos/github/safarilewis/alx-files_manager/badge.svg?branch=main)](https://coveralls.io/github/safarilewis/alx-files_manager?branch=main)
-
 A simple file management API built with Express, MongoDB, Redis, Bull, and Node.js.
 
 ## Requirements
@@ -13,9 +11,6 @@ A simple file management API built with Express, MongoDB, Redis, Bull, and Node.
 + Redis
 + Mongoose
 
-### APIs
-
-+ A Google API should be created with at least an email sending scope and a valid URL (e.g.; `http://localhost:5000/`) should be one of the redirect URIs. The `credentials.json` file should be stored in the root directory of this project.
 
 ### Environment Variables
 
